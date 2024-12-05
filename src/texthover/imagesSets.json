@@ -1,0 +1,45 @@
+{
+    "set1": [
+      "./src/texthover/assets/img1.jpg",
+      "./src/texthover/assets/img2.jpeg",
+      "./src/texthover/assets/img3.png",
+      "./src/texthover/assets/img4.jpg",
+      "./src/texthover/assets/img5.jpg",
+      "./src/texthover/assets/img11.jpg",
+      "./src/texthover/assets/img12.jpg",
+      "./src/texthover/assets/img13.jpg",
+      "./src/texthover/assets/img14.jpg",
+      "./src/texthover/assets/img15.jpg"
+    ],
+    "set2": [
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png",
+      "./src/texthover/assets/sad.png"
+    ],
+    "set3": [
+      "./src/texthover/assets/gg1.gif",
+      "./src/texthover/assets/gg2.gif",
+      "./src/texthover/assets/gg3.gif",
+      "./src/texthover/assets/gg4.gif",
+      "./src/texthover/assets/gg5.gif",
+      "./src/texthover/assets/gg6.gif",
+      "./src/texthover/assets/gg7.gif",
+      "./src/texthover/assets/gg8.gif",
+      "./src/texthover/assets/gg9.gif",
+      "./src/texthover/assets/gg10.gif",
+      "./src/texthover/assets/gg12.gif"
+    ]
+  }
+  

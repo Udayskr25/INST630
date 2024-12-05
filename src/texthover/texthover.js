@@ -10,7 +10,7 @@ window.onload = function () {
           <p>
             <span data-imageset="set1">Animation, sculpture, or game?</span> Each idea felt right—then wrong.
             What if it’s not good enough? What if I choose wrong?
-            <span data-imageset="set2">Trappedin decision paralysis</span>, I turned the confusion into my project,
+            <span data-imageset="set2">Trapped in decision paralysis</span>, I turned the confusion into my project,
             using <span data-imageset="set3">motion</span> to give shape to my indecision.
           </p>
         </div>
@@ -134,7 +134,7 @@ window.onload = function () {
   let imageSets = {};
 
   // Fetch imageSets.json file from the texthover folder
-  fetch("./texthover/imagesSets.json")
+  fetch("./src/texthover/imagesSets.json")
     .then(response => response.json())
     .then(data => {
       imageSets = data;

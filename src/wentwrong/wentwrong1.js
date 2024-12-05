@@ -99,15 +99,15 @@ document.addEventListener("DOMContentLoaded", function () {
           }
           
           #card-1-${sectionIndex} {
-            background: url(./wentwrong/assets/card-1.png) no-repeat 50% 50%;
+            background: url(./src/wentwrong/assets/card-1.png) no-repeat 50% 50%;
           }
           
           #card-2-${sectionIndex} {
-            background: url(./wentwrong/assets/card-2.png) no-repeat 50% 50%;
+            background: url(./src/wentwrong/assets/card-2.png) no-repeat 50% 50%;
           }
           
           #card-3-${sectionIndex} {
-            background: url(./wentwrong/assets/card-3.png) no-repeat 50% 50%;
+            background: url(./src/wentwrong/assets/card-3.png) no-repeat 50% 50%;
           }
           
           .card-phase {
