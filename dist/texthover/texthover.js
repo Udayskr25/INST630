@@ -134,7 +134,7 @@ window.onload = function () {
   let imageSets = {};
 
   // Fetch imageSets.json file from the texthover folder
-  fetch("./public/texthover/imagesSets.json")
+  fetch("/texthover/imagesSets.json")
     .then(response => response.json())
     .then(data => {
       imageSets = data;
