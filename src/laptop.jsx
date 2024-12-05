@@ -4,6 +4,7 @@ import { SpotLight } from "@react-three/drei";
 import { RectAreaLightUniformsLib } from 'three/examples/jsm/lights/RectAreaLightUniformsLib.js';
 import "./style.css";
 import { useThree } from "@react-three/fiber";
+import { Color } from "three";
 
 export default function Laptop() {
     const laptop = useGLTF("/computerset/computerset.gltf");
@@ -19,6 +20,23 @@ export default function Laptop() {
     useEffect(() => {
         RectAreaLightUniformsLib.init();
     }, []);
+
+    // Set material properties (metalness, roughness, color) for the model
+    useEffect(() => {
+        if (laptop && laptop.scene) {
+            laptop.scene.traverse((node) => {
+                if (node.isMesh) {
+                    // Ensure the material exists
+                    if (node.material) {
+                        // Set the material properties here
+                        node.material.metalness = 0.9;  // Set the metallic property (0 to 1)
+                        node.material.roughness = 0.7;  // Set the roughness property (0 to 1)
+                        node.material.color = new Color(0x0a0a0a);  // Set the color to a specific value
+                    }
+                }
+            });
+        }
+    }, [laptop]);
 
     // Function to animate the camera to a target position, FOV, and target point
     function animateCameraToPosition(targetPosition, duration, targetFov, targetPoint) {
@@ -98,7 +116,7 @@ export default function Laptop() {
             {/* Spotlights */}
             <SpotLight
                 color={0x618fa4}
-                intensity={5}
+                intensity={1}
                 distance={100}
                 angle={1}
                 penumbra={2}
@@ -107,8 +125,8 @@ export default function Laptop() {
             />
             <SpotLight
                 color={0xffbf00}
-                intensity={1}
-                distance={30}
+                intensity={2}
+                distance={50}
                 angle={2}
                 penumbra={1}
                 position={[-4, 11, 0]}
@@ -116,9 +134,9 @@ export default function Laptop() {
                 shadow-bias={-0.0001}
             />
             <SpotLight
-                color={0x0B3D91}
-                intensity={1}
-                distance={30}
+                color={0x00888e}
+                intensity={2}
+                distance={50}
                 angle={5}
                 penumbra={1}
                 position={[1.8, 15.4, 3]}
@@ -128,12 +146,20 @@ export default function Laptop() {
 
             {/* RectAreaLight */}
             <rectAreaLight
-                color={0x0B3D91}
-                intensity={5}
-                width={10}
-                height={10}
+                color={0x00888e}
+                intensity={10}
+                width={100}
+                height={100}
                 position={[5, 10, 7]}
-                rotation={[0, Math.PI / 4, 0]}
+                rotation={[0, Math.PI / 2, 0]}
+            />
+             <rectAreaLight
+                color={0xffbf00}
+                intensity={7}
+                width={100}
+                height={100}
+                position={[5, 13, -7]}
+                rotation={[0, Math.PI / 6, 0]}
             />
 
             {/* OrbitControls */}

@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.querySelector('#uday'))
 root.render(
     <>
     <div className="big-text">
-        <b>LET'S GOOO</b>
+        <b>TAAA DAAA</b>
     </div>
     <Canvas
         camera={{
