@@ -1,5 +1,6 @@
-/* Import Outfit font from Google Fonts - add this at the very top of your CSS */
+/* Import both fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Timmons+NY&display=swap');
 
 /* Set Outfit as default font for all elements */
 * {
@@ -24,4 +25,32 @@ html, body {
     height: auto;
     overflow-x: hidden;
     font-family: 'Outfit', sans-serif;
+}
+
+/* Apply Timmons NY font specifically to the quote section */
+.quote-section {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: 'Timmons NY', serif !important; /* Add !important to force Timmons NY */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    text-align: center;
+}
+
+.quote-container {
+    max-width: 800px; /* Limit quote width for better readability */
+    padding: 20px;
+}
+
+.quote-text {
+    font-size: 2.5em; /* Adjust font size as needed */
+    line-height: 1.4;
+    margin-bottom: 1em;
+}
+
+.quote-author {
+    font-size: 1.5em; /* Adjust author name size as needed */
+    font-style: italic;
 }
