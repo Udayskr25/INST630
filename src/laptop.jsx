@@ -91,7 +91,7 @@ export default function Laptop() {
                     distanceFactor={1.16}
                     rotation-x={-0.15}
                 >
-                    <iframe src="https://www.uxdayshankar.com/" />
+                    <iframe src="https://iframeinst630.netlify.app/" />
                 </Html>
             </primitive>
 
