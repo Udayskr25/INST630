@@ -1,0 +1,45 @@
+{
+    "marquees": [
+      {
+        "id": "marquee-1",
+        "items": [
+          { "type": "image", "src": "./assets1/img1.jpg" },
+          { "type": "text", "content": "Focus" },
+          { "type": "image", "src": "./assets1/img2.jpg" },
+          { "type": "image", "src": "./assets1/img3.jpg" },
+          { "type": "image", "src": "./assets1/img4.jpg" }
+        ]
+      },
+      {
+        "id": "marquee-2",
+        "items": [
+          { "type": "image", "src": "./assets1/img5.jpg" },
+          { "type": "image", "src": "./assets1/img6.jpg" },
+          { "type": "image", "src": "./assets1/img7.jpg" },
+          { "type": "text", "content": "Fades" },
+          { "type": "image", "src": "./assets1/img8.jpg" }
+        ]
+      },
+      {
+        "id": "marquee-3",
+        "items": [
+          { "type": "image", "src": "./assets1/img9.jpg" },
+          { "type": "text", "content": "toooo" },
+          { "type": "image", "src": "./assets1/img10.jpg" },
+          { "type": "image", "src": "./assets1/img11.jpg" },
+          { "type": "image", "src": "./assets1/img12.jpg" }
+        ]
+      },
+      {
+        "id": "marquee-4",
+        "items": [
+          { "type": "image", "src": "./assets1/img13.jpg" },
+          { "type": "image", "src": "./assets1/img14.jpg" },
+          { "type": "image", "src": "./assets1/img15.jpg" },
+          { "type": "text", "content": "quickly" },
+          { "type": "image", "src": "./assets1/img16.jpg" }
+        ]
+      }
+    ]
+  }
+  

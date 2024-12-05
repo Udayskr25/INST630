@@ -1,0 +1,128 @@
+/* Import Outfit font from Google Fonts - add this at the very top of your CSS */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+/* Set Outfit as default font for all elements */
+* {
+    font-family: 'Outfit', sans-serif;
+}
+
+.background {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.2);
+    z-index: -1;
+    overflow: hidden;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+/* Backdrop overlay */
+#backdrop {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Lower z-index than the popup */
+}
+
+/* Pop-up container styling for Windows XP look */
+#popup {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  padding: 0;
+  background-color: #E7E7E7; /* Classic light gray background */
+  border: 2px solid #000080; /* Deep blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  z-index: 1000; /* Higher z-index than the backdrop */
+  font-family: "Tahoma", sans-serif; /* Classic Windows font */
+  font-size: 14px;
+}
+
+/* Title bar styling */
+#popup .title-bar {
+  background-color: #000080; /* Classic Windows XP title bar color */
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Close button in title bar */
+#popup .title-bar button {
+  background-color: #FF0000; /* Red background like Windows XP close button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  border-radius: 2px;
+}
+
+#popup .title-bar button:hover {
+  background-color: #CC0000; /* Darker red on hover */
+}
+
+/* Pop-up content styling */
+#popup .popup-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Icon styling for caution icon */
+#popup .icon {
+  margin-right: 15px;
+}
+
+/* Close button at the bottom (optional) */
+#popup button.close-button {
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: #E1E1E1;
+  color: black;
+  border: 1px solid #A1A1A1;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#popup button.close-button:hover {
+  background-color: #C1C1C1;
+  border-color: #808080;
+}
+
+/* Glitch effect keyframes */
+@keyframes glitch {
+  0% { top: 45%; left: 48%; }
+  15% { top: 55%; left: 52%; }
+  30% { top: 50%; left: 60%; }
+  45% { top: 53%; left: 43%; }
+  60% { top: 48%; left: 50%; }
+  75% { top: 52%; left: 55%; }
+  90% { top: 50%; left: 45%; }
+  100% { top: 50%; left: 50%; }
+}
